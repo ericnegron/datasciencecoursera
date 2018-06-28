@@ -27,7 +27,7 @@ The `tidySet.txt` file is text file containing the average of each type of activ
   From the original data set's `features_info.txt`:
   >The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
 
-  These measurements can be broken into two categories:
+  These measurements can be broken into two categories with values ranging from -1 to 1:
   * **Time Domain Signals**:  captured at a constant rate of 50hz and filtered using median and 3rd order low pass Butterworth filters.
   
     * Average time domain for body acceleration in X,Y,Z directions:
@@ -187,5 +187,51 @@ The `tidySet.txt` file is text file containing the average of each type of activ
       * `FrequencyBodyGyroscope.MeanFrequencyY`
       * `FrequencyBodyGyroscope.MeanFrequencyZ`
       
-
+    * Average of the frequency compenents for magnitude of body accleration: 
     
+      * `FrequencyBodyAccelerometerMagnitude.Mean`
+      
+    * Standard deviation of the frequency components for magnitude of body acceleration:
+    
+      * `FrequencyBodyAccelerometerMagnitude.StandardDeviation`
+      
+    * Weighted average of the frequency components for magnitude of body acceleration:
+    
+      * `FrequencyBodyAccelerometerMagnitude.MeanFrequency`
+      
+    * Average of the frequency compenents for magnitude of body jerk accleration: 
+    
+      * `FrequencyBodyAccelerometerJerkMagnitude.Mean`
+      
+    * Standard deviation of the frequency components for magnitude of body jerk acceleration:
+    
+      * `FrequencyBodyAccelerometerJerkMagnitude.StandardDeviation`
+      
+    * Weighted average of the frequency components for magnitude of body jerk acceleration:
+    
+      * `FrequencyBodyAccelerometerJerkMagnitude.MeanFrequency`
+
+    * Average of the frequency compenents for magnitude of body angular velocity: 
+    
+      * `FrequencyBodyGyroscopeMagnitude.Mean`
+      
+    * Standard deviation of the frequency components for magnitude of body angular velocity:
+    
+      * `FrequencyBodyGyroscopeMagnitude.StandardDeviation`
+      
+    * Weighted average of the frequency components for magnitude of body angular velocity:
+    
+      * `FrequencyBodyGyroscopeMagnitude.MeanFrequency`
+      
+    * Average of the frequency compenents for magnitude of body jerk angular velocity: 
+    
+      * `FrequencyBodyGyroscopeJerkMagnitude.Mean`
+      
+    * Standard deviation of the frequency components for magnitude of body jerk angular velocity:
+    
+      * `FrequencyBodyGyroscopeJerkMagnitude.StandardDeviation`
+      
+    * Weighted average of the frequency components for magnitude of body jerk angular velocity:
+    
+      * `FrequencyBodyGyroscopeJerkMagnitude.MeanFrequency`
+      
