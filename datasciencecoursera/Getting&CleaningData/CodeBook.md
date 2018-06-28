@@ -7,6 +7,31 @@ A link to the original study has been included in the `README.md` file in this r
 ## Data
 The `tidySet.txt` file is text file containing the average of each type of activity, organized by activity and subject.
 
+## Transformations
+[Source data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) was obtained by downloding using the `curl` method of `download.file()`.
+
+Once downloaded the following transformations were made to arrive at the final tidy data set:
+1. Separate data sets were merged together to form one combined data set.
+   * Training subjects and test subjects were merged using `bind_rows()`
+   * Training and test feature sets were merged using `bind_rows()`
+   * Training and test activity labels were merged using `bind_rows()`
+   * All merged sets were then combined using `bind_cols()`
+2. The columns of the combined data set were searched for "subject", "activity", "mean", or "std" using `grepl()`.  This extracted only the variables that contained the standard deviation or mean of that method while still retaining the `subject` and `activityId` columns.
+3.  The descriptive activity names were added to the `activity` column by creating a factor of the activity observations and mapping them to the corresponding `activityId`.
+4.  The feature names were cleaned up using `gsub()`.
+    * `(`, `)`, `-` characters were removed 
+    * Method abbreviations were removed and replaced with full word (ex: `Acc` was replaced with `Accelerometer`)
+    * `mean` and `std` were capitalized to keep with the camel case patern of the variable names
+    * Initial `f` and `t` were expanded to `Frequency` and `Time` to represent frequency and time domains
+    * Duplicate `BodyBody` was replaced with singular `Body`
+    * `activityId` column name was changed to `activity` to represent prior replacement of activity id numbers with their corresponding names.
+5. The combined data was piped through a series of `dplyr` functions:
+   * `unique()` grabbed only unique values
+   * `group_by()` grouped the data by `subjectId` and `activity` name
+   * All data was then summarized to grab the `mean` of all values using `summarise_all()`
+   * Resulting data was then arranged by `subjectId` and `activity` alphabetically by using `arrange()`
+6. `tidySet.txt` written out to file 
+
 ## Variables
 * `subjectId`
   
