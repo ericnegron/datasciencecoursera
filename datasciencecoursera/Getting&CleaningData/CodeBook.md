@@ -7,8 +7,22 @@ A link to the original study has been included in the `README.md` file in this r
 ## Data
 The `tidySet.txt` file is text file containing the average of each type of activity, organized by activity and subject.
 
+Original source data files used for tidying obtained [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip):
+* `activity_labels.txt` : contains activity names and ids
+* `features.txt` : contains the observation method names
+* `X_test.txt` : contains the test set observations
+* `y_test.txt` : containts the test set observation labels
+* `subject_test.txt` : contains the test set subject ids
+* `X_train.txt` : contains the training set observations
+* `y_train.txt` : contatins the training set observation labels
+* `subject_train.txt` : contains the training set subject ids
+
+Original source data files used for information on source data set:
+* `README.txt`
+* `features_info.txt`
+
 ## Transformations
-[Source data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) was obtained by downloding using the `curl` method of `download.file()`.
+Source data was obtained by downloding using the `curl` method of `download.file()`.
 
 Once downloaded the following transformations were made to arrive at the final tidy data set:
 1. Separate data sets were merged together to form one combined data set.
