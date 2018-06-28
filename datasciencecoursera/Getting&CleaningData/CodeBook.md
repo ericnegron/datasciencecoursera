@@ -42,6 +42,93 @@ The `tidySet.txt` file is text file containing the average of each type of activ
       * `TimeBodyAccelerometer.StandardDeviationY`
       * `TimeBodyAccelerometer.StandardDeviationZ`
       
+    * Average time doman for gravity acceleration in X,Y,Z directions:
+    
+      * `TimeGravityAccelerometer.MeanX`
+      * `TimeGravityAccelerometer.MeanY`
+      * `TimeGravityAccelerometer.MeanZ`
+      
+    * Standard deviation for time doman gravity acceleration in X,Y,Z directions:
+    
+      * `TimeGravityAccelerometer.StandardDeviationX`
+      * `TimeGravityAccelerometer.StandardDeviationY`
+      * `TimeGravityAccelerometer.StandardDeviationZ`
+    
+    * Average time doman for body jerk acceleration in X,Y,Z directions:
+    
+      * `TimeBodyAccelerometerJerk.MeanX`
+      * `TimeBodyAccelerometerJerk.MeanY`
+      * `TimeBodyAccelerometerJerk.MeanZ`
+      
+    * Standard deviation for time domain body jerk acceleration in X,Y,Z directions:
+    
+      * `TimeBodyAccelerometerJerk.StandardDeviationX`
+      * `TimeBodyAccelerometerJerk.StandardDeviationY`
+      * `TimeBodyAccelerometerJerk.StandardDeviationZ`
+    
+    * Average time doman for body angular velocity in X,Y,Z directions:
+    
+      * `TimeBodyGyroscope.MeanX`
+      * `TimeBodyGyroscope.MeanY`
+      * `TimeBodyGyroscope.MeanZ`
+      
+    * Standard deviation for body angular velocity in X,Y,Z directions:
+    
+      * `TimeBodyGyroscope.StandardDeviationX`
+      * `TimeBodyGyroscope.StandardDeviationY`
+      * `TimeBodyGyroscope.StandardDeviationZ`
+      
+    * Average time domain for body jerk angular velocity in X,Y,Z directions:
+    
+      * `TimeBodyGyroscopeJerk.MeanX`
+      * `TimeBodyGyroscopeJerk.MeanY`
+      * `TimeBodyGyroscopeJerk.MeanZ`
+      
+    * Standard deviation for time domain body jerk angular velocity in X,Y,Z directions
+      
+      * `TimeBodyGyroscopeJerk.StandardDeviationX`
+      * `TimeBodyGyroscopeJerk.StandardDeviationY`
+      * `TimeBodyGyroscopeJerk.StandardDeviationZ`
+      
+    * Average time domain for magnitude of body acceleration: 
+    
+      * `TimeBodyAccelerometerMagnitude.Mean`
+      
+    * Standard deviation for time domain of magnitude of body acceleration:
+    
+      * `TimeBodyAccelerometerMagnitude.StandardDeviation`
+      
+    * Average time domain for magnitude of gravity acceleration: 
+    
+      * `TimeGravityAccelerometerMagnitude.Mean`
+      
+    * Standard deviation for time domain magnitude of gravity acceleration:
+    
+      * `TimeGravityAccelerometerMagnitude.StandardDeviation`
+    
+    * Average time domain for magnitude of body jerk acceleration:
+      
+      * `TimeBodyAccelerometerJerkMagnitude.Mean`
+      
+    * Standard deviation for time domain of magnitude of body jerk acceleration:
+    
+      * `TimeBodyAcclerometeJerkMagnitude.StandardDevation`
+      
+    * Average time for magnitude of angular velocity of body:
+    
+      * `TimeBodyGyroscopeMagnitude.Mean`
+      
+    * Standard deviation for magnitude of angular velocity of body:
+    
+      * `TimeBodyGyroscopeMagnitude.StandardDeviation`
+      
+    * Average time for magnitude of angular velocity of body jerk:
+    
+      * `TimeBodyGyroscopeJerkMagnitude.Mean`
+      
+    * Standard deviation for magnitude of angular velocity of body jerk:
+    
+      * `TimeBodyGyroscopeJerkMagnitude.StandardDeviation`
     
     
   * **Frequency Domain Signals**: signals processed with a Fast Fourier Transform to select time domain signals.
