@@ -133,7 +133,59 @@ The `tidySet.txt` file is text file containing the average of each type of activ
     
   * **Frequency Domain Signals**: signals processed with a Fast Fourier Transform to select time domain signals.
     
+    * Average frequency domain body acceleration in X,Y,Z directions:
+      
+      * `FrequencyBodyAccelerometer.MeanX`
+      * `FrequencyBodyAccelerometer.MeanY`
+      * `FrequencyBodyAccelerometer.MeanZ`
+      
+    * Standard deviation for frequency domain body acceleration in X,Y,Z directions:
     
+      * `FrequencyBodyAccelerometer.StandardDeviationX`
+      * `FrequencyBodyAccelerometer.StandardDeviationY`
+      * `FrequencyBodyAccelerometer.StandardDeviationZ`
+      
+    * Weighted average frequency domain for body acceleration in X,Y,Z directions:
+    
+      * `FrequencyBodyAccelerometer.MeanFrequencyX`
+      * `FrequencyBodyAccelerometer.MeanFrequencyY`
+      * `FrequencyBodyAccelerometer.MeanFrequencyZ`
   
-  
+    * Average frequency domain body jerk  acceleration in X,Y,Z directions:
+      
+      * `FrequencyBodyAccelerometerJerk.MeanX`
+      * `FrequencyBodyAccelerometerJerk.MeanY`
+      * `FrequencyBodyAccelerometerJerk.MeanZ`
+      
+    * Standard deviation for frequency domain bodyjerk acceleration in X,Y,Z directions:
+    
+      * `FrequencyBodyAccelerometerJerk.StandardDeviationX`
+      * `FrequencyBodyAccelerometerJerk.StandardDeviationY`
+      * `FrequencyBodyAccelerometerJerk.StandardDeviationZ`
+      
+    * Weighted average frequency domain for body jerk acceleration in X,Y,Z directions:
+    
+      * `FrequencyBodyAccelerometerJerk.MeanFrequencyX`
+      * `FrequencyBodyAccelerometerJerk.MeanFrequencyY`
+      * `FrequencyBodyAccelerometerJerk.MeanFrequencyZ`
+      
+    * Average frequency domain for body angular acceleration in X,Y,Z directions:
+    
+      * `FrequencyBodyGyroscope.MeanX`
+      * `FrequencyBodyGyroscope.MeanY`
+      * `FrequencyBodyGyroscope.MeanZ`
+      
+    * Standard deviation for frequency domain of body angular acceleration in X,Y,Z directions:
+    
+      * `FrequencyBodyGyroscope.StandardDeviationX`
+      * `FrequencyBodyGyroscope.StandardDeviationY`
+      * `FrequencyBodyGyroscope.StandardDeviationZ`
+      
+    * Weighted average frequency domain for body angular acceleration in X,Y,Z directions:
+    
+      * `FrequencyBodyGyroscope.MeanFrequencyX`
+      * `FrequencyBodyGyroscope.MeanFrequencyY`
+      * `FrequencyBodyGyroscope.MeanFrequencyZ`
+      
+
     
